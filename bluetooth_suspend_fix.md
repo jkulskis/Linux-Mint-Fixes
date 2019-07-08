@@ -15,7 +15,9 @@ Type=simple
 ExecStart=-/usr/bin/bluetooth-enable.service
 
 [Install]
-WantedBy=hibernate.target suspend.target hybrid-sleep.target
+WantedBy=hibernate.target 
+WantedBy=suspend.target
+WantedBy=hybrid-sleep.target
 ```
 ##### /etc/systemd/system/bluetooth-suspend.service #####
 ```
@@ -28,8 +30,8 @@ WantedBy=hybrid-sleep.target
 [Service]
 Type=simple
 ExecStart=-/usr/bin/bluetooth-suspend.sh
-[Install]
 
+[Install]
 WantedBy=sleep.target
 WantedBy=hibernate.target
 WantedBy=hybrid-sleep.target
