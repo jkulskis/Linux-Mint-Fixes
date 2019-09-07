@@ -1,5 +1,7 @@
 # Small Miscellaneous Fixes #
 
+Any miscellaneous / smaller fixes go here 
+
 ## Google Chrome Install Error ##
 *From https://www.linuxquestions.org/questions/linux-software-2/messed-up-dpkg-google-chrome-stable-package-is-in-a-very-bad-inconsistent-state-4175498370/*
 
