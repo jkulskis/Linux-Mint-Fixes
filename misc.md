@@ -17,7 +17,7 @@ To fix this, run the following find/grep command:
 sudo find /var/lib/dpkg -exec grep -l "google-chrome-stable" {} \;
 ```
 
-Then open up /var/lib/dpkg/info/google-chrome-stable.prerm (will require root)
+Then open up `/var/lib/dpkg/info/google-chrome-stable.prerm` (will require root)
 
 Add `exit 0` as the first line for this file, then run the following to purge chrome:
 
